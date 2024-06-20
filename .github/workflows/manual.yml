@@ -20,7 +20,8 @@ jobs:
     steps:
       - name: Decode File Content
         run: |
-          cat "${{ inputs.data }}" |base64 --decode > ./decoded_file.txt
+          "$(cat ${{ inputs.data }})" |base64 --decode > ./decoded_file.txt
+          # run: echo "version=$(cat VERSION)" >> $GITHUB_OUTPUT
       - name: Display Greeting
         run: |
           echo "${{ inputs.greeting }}, ${{ inputs.name }}!"
