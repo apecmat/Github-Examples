@@ -18,7 +18,9 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - uses: apecmat/Github-Examples@main
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
       - name: Decode File Content
         run: |
           echo "$(cat ${{ inputs.data }})" |base64 --decode > ./decoded_file.txt
