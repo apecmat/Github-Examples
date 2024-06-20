@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Zobacz
         run: |
-        ls -ali; pwd
+          ls -ali; pwd
       - name: Decode File Content
         run: |
           echo "$(cat ${{ inputs.data }})" |base64 --decode > ./decoded_file.txt
