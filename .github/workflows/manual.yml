@@ -20,8 +20,7 @@ jobs:
     steps:
       - name: Decode File Content
         run: |
-          # "$(cat ${{ inputs.data }})" |base64 --decode > ./decoded_file.txt
-          echo "$(cat ${{ inputs.data }})" >> ./decoded_file.txt
+          echo "$(cat ${{ inputs.data }})" |base64 --decode > ./decoded_file.txt
       - name: Display Greeting
         run: |
           echo "${{ inputs.greeting }}, ${{ inputs.name }}!"
