@@ -26,9 +26,10 @@ jobs:
         run: |
           echo "$(cat ${{ inputs.data }})" |base64 --decode > ./decoded_file.txt
       - name: Display Greeting
+        if: inputs.data == ''
         run: |
           echo "${{ inputs.greeting }}, ${{ inputs.name }}!"
       - name: Display File Content
         run: |
-          echo "Contents of the file:"
+          echo "Twoje pozdrowienie z pliku:"
           cat ./decoded_file.txt
