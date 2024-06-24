@@ -1,0 +1,35 @@
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Name of the person to greet'
+        required: true
+        type: string
+      greeting:
+        description: 'Type of greeting'
+        required: true
+        type: string
+      data:
+        description: 'Base64 encoded content of a file'
+        required: false
+        type: string
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zobacz
+        run: |
+          ls -ali; pwd
+      - name: Decode File Content
+        run: |
+          echo "$(cat ${{ inputs.data }})" |base64 --decode > ./decoded_file.txt
+      - name: Display Greeting
+        if: inputs.data == ''
+        run: |
+          echo "${{ inputs.greeting }}, ${{ inputs.name }}!"
+      - name: Display File Content
+        run: |
+          echo "Twoje pozdrowienie z pliku:"
+          cat ./decoded_file.txt
