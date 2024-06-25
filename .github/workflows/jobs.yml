@@ -1,0 +1,14 @@
+on: ['Push']
+
+jobs:
+  job2:
+    needs: job1
+    steps:
+      - name: "stepA"
+        run: |
+          echo "Hello"
+  job1:
+    steps:
+      - name: "stepB"
+        run: |
+          echo "World"
