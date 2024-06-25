@@ -10,3 +10,16 @@ jobs:
         run: |
           echo "Hello! $MY_ACTION"
           echo "Hello! ${{ github.action }}"
+      - name: "My Step 2"
+        env:
+          MY_ACTION: ${{ github.action}}
+        run: |
+          echo "Hello! $MY_ACTION"
+          echo "Hello! ${{ github.action }}"
+      - name: "My Step 3"
+        id: dupa
+        env:
+          MY_ACTION: ${{ github.action}}
+        run: |
+          echo "Hello! $MY_ACTION"
+          echo "Hello! ${{ github.action }}"
