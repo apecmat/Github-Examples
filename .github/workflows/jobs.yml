@@ -7,10 +7,10 @@ jobs:
     steps:
       - name: "stepA"
         run: |
-          echo "Hello"
+          echo "World"
   job1:
     runs-on: ubuntu-latest
     steps:
       - name: "stepB"
         run: |
-          echo "World"
+          echo "Hello"
