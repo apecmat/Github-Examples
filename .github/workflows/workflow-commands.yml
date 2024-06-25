@@ -4,7 +4,7 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: "group logging
+      - name: "group logging"
         run: |
           echo "::group::My Group Message"
           echo "Msg 1"
