@@ -2,12 +2,14 @@ on: ['Push']
 
 jobs:
   job2:
+    runs-on: ubuntu-latest
     needs: job1
     steps:
       - name: "stepA"
         run: |
           echo "Hello"
   job1:
+    runs-on: ubuntu-latest
     steps:
       - name: "stepB"
         run: |
