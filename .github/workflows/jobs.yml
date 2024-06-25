@@ -1,4 +1,4 @@
-on: ['Push']
+on: ['push']
 
 jobs:
   job2:
