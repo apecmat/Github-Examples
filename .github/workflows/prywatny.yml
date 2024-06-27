@@ -11,5 +11,4 @@ jobs:
         with:
           jakies-cos: 'A no jednak na pewno tak'
       - name: A teraz output
-        run: |
-          echo "Wynik: ${{ steps.testing.outputs.wynik }}"
+        run: 'echo "Wynik: ${{ steps.testing.outputs.wynik }}"'
