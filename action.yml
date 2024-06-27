@@ -9,7 +9,7 @@ outputs:
   wynik:
     description: 'Wynik'
 runs:
-  using: 'python'
+  using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.jakies-cos }}
