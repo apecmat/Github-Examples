@@ -6,10 +6,9 @@ jobs:
     name: A job
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Just testing step
         id: testing
-        # uses: apecmat/Github-Examples@v1
         uses: ./.github/actions/jakies-cos/action.yml
         with:
           jakies-cos: 'A no jednak na pewno tak'
