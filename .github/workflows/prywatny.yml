@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Just testing step
         id: testing
-        uses: apecmat/github-actions-examples@v1
+        uses: apecmat/Github-Examples@v1
         with:
           jakies-cos: 'A no jednak na pewno tak'
       - name: A teraz output
