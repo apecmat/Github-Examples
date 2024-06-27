@@ -10,7 +10,8 @@ jobs:
   cos:
     runs-on: ubuntu-latest
     id: testing
-    uses: ./.github/actions/jakies-cos/action.yml
+    # uses: ./.github/actions/jakies-cos/action.yml
+    uses: apecmat/Github-Examples@v1
     with:
       jakies-cos: 'A no jednak na pewno tak'
       # - name: Just testing step
