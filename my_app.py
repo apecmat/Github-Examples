@@ -38,4 +38,4 @@ for output_name, details in parameters['outputs'].items():
     print()
 
 with open(os.getenv('GITHUB_OUTPUT'), 'a') as f:
-    f.write(f'wynik=alejajki\n')
+    f.write(f'wynik={parameters['inputs']['jakies-cos']}\n')

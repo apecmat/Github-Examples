@@ -7,13 +7,6 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
-      # - name: Install Python dependencies
-      #   # uses: py-actions/py-dependency-install@v4
-      #   # with:
-      #   #   path: "requirements.txt"
-      #   run: |
-      #     python3 -m pip install --upgrade pip
-      #     pip3 install -r requirements.txt
       - name: Just testing step
         id: testing
         uses: apecmat/Github-Examples@main
