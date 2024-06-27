@@ -1,4 +1,4 @@
-name: 'Pierwszy Action'
+name: 'Github-Examples'
 description: 'To jest mój pierwszy action'
 inputs:
   jakies-cos:
