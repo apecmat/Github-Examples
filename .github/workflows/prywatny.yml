@@ -5,11 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     name: A job
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
+      # - name: checkout
+      #   uses: actions/checkout@v2
       - name: Just testing step
         id: testing
-        uses: apecmat/Github-Examples@v1
+        # uses: apecmat/Github-Examples@v1
+        uses: ./.github/actions/jakies-cos/action.yml
         with:
           jakies-cos: 'A no jednak na pewno tak'
       - name: A teraz output

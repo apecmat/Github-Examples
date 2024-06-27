@@ -1,4 +1,4 @@
-name: 'Github-Examples'
+name: 'jakies-cos'
 description: 'To jest mój pierwszy action'
 inputs:
   jakies-cos:
