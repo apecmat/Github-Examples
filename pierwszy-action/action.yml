@@ -1,0 +1,15 @@
+name: 'Pierwszy Action'
+description: 'To jest mój pierwszy action'
+inputs:
+  jakies-cos:
+    description: 'Jakies cos'
+    required: true
+    default: 'A no tak'
+outputs:
+  wynik:
+    description: 'Wynik'
+runs:
+  using: 'python'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.jakies-cos }}
