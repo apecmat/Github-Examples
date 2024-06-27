@@ -7,22 +7,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
-  cos:
-    runs-on: ubuntu-latest
-    id: testing
-    # uses: ./.github/actions/jakies-cos/action.yml
-    uses: apecmat/Github-Examples@v1
-    with:
-      jakies-cos: 'A no jednak na pewno tak'
-      # - name: Just testing step
-      #   id: testing
-      #   uses: ./.github/actions/jakies-cos/action.yml
-      #   with:
-      #     jakies-cos: 'A no jednak na pewno tak'
-      # - name: A teraz output
-      #   run: echo "Wynik ${{ steps.testing.outputs.wynik }}"
-  cos2:
-    runs-on: ubuntu-latest
-    steps:
+      - name: Just testing step
+        id: testing
+        uses: ./.github/actions/jakies-cos/action.yml
+        with:
+          jakies-cos: 'A no jednak na pewno tak'
       - name: A teraz output
         run: echo "Wynik ${{ steps.testing.outputs.wynik }}"
