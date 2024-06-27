@@ -13,3 +13,10 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.jakies-cos }}
+  steps:
+    - name: Set up Python environment
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y python3-pip
+        pip3 install pyyaml
+      shell: bash
