@@ -7,7 +7,7 @@ parameters = {
 }
 
 
-action_file = 'action.yml'
+action_file = '.github/actions/jakies-cos/action.yml'
 with open(action_file, 'r') as file:
     action_data = yaml.safe_load(file)
 if 'inputs' in action_data:
