@@ -6,6 +6,7 @@ parameters = {
     'outputs': {}
 }
 
+
 action_file = 'action.yml'
 with open(action_file, 'r') as file:
     action_data = yaml.safe_load(file)
