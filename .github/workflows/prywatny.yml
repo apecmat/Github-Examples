@@ -1,0 +1,14 @@
+on: ['Push']
+
+jobs:
+  jakis_job:
+    runs-on: ubuntu-latest
+    name: A job
+    steps:
+      - name: Just testing step
+        id: testing
+        uses: apecmat/github-actions-examples/pierwszy-action@v1
+        with:
+          jakies-cos: 'A no jednak na pewno tak'
+      - name: A teraz output
+        run: echo "Wynik: ${{ steps.testing.outputs.wynik }}"
