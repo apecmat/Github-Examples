@@ -1,5 +1,7 @@
 import os
 import yaml
+import sys
+
 
 parameters = {
     'inputs': {},
@@ -34,8 +36,11 @@ for input_name, details in parameters['inputs'].items():
 print('Outputs:')
 for output_name, details in parameters['outputs'].items():
     print(f'Output: {output_name}')
+    print(f'Output value: sys.argv[1]')
     print(f'Description: {details["description"]}')
     print()
+
+print(f'sys.argv: {sys.argv}')
 
 with open(os.getenv('GITHUB_OUTPUT'), 'a') as f:
     f.write(f'wynik={parameters['inputs']['jakies-cos']}\n')
