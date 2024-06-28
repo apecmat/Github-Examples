@@ -1,5 +1,8 @@
 name: 'jakies-cos'
 description: 'To jest mój pierwszy action'
+branding:
+  icon: 'book-open'
+  color: 'blue'
 inputs:
   jakies-cos:
     description: 'Jakies cos'
