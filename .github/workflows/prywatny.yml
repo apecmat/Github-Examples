@@ -9,8 +9,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Just testing step
         id: testing
-        uses: apecmat/Github-Examples@main
-        # uses: ./.github/actions/jakies-cos
+        # uses: apecmat/Github-Examples@main
+        uses: ./.github/actions/jakies-cos
         with:
           # path: 'pierwszy-action'
           jakies-cos: 'A no jednak na pewno tak'
