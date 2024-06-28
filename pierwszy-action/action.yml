@@ -1,4 +1,4 @@
-name: 'jakies-cos'
+name: 'nazwa-akcji'
 description: 'To jest mój pierwszy action'
 branding:
   icon: 'book-open'
@@ -17,3 +17,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.jakies-cos }}
+    - 'inny'
+  # entrypoint: 'my_app.py'
