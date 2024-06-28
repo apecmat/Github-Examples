@@ -11,6 +11,7 @@ jobs:
         id: testing
         uses: apecmat/Github-Examples@main
         with:
+          path: 'pierwszy-action'
           jakies-cos: 'A no jednak na pewno tak'
           # args: 'jakies-cos=A no jednak na pewno tak'
       - name: A teraz output
