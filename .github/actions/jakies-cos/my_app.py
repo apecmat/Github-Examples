@@ -5,6 +5,7 @@ import sys
 
 print(f'sys.argv: {sys.argv}')
 print(f'inputs.jakies-cos: {sys.argv[1]}')
+jakies_cos = sys.argv[1]
 # print(f'{INPUT_JAKIES-COS}')
 
 # parameters = {
@@ -46,5 +47,5 @@ print(f'inputs.jakies-cos: {sys.argv[1]}')
 
 # print(f'sys.argv: {sys.argv}')
 
-# with open(os.getenv('GITHUB_OUTPUT'), 'a') as f:
-#     f.write(f'wynik={parameters['inputs']['jakies-cos']}\n')
+with open(os.getenv('GITHUB_OUTPUT'), 'a') as f:
+    f.write(f'wynik={jakies_cos}\n')
