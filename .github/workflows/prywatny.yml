@@ -12,7 +12,7 @@ jobs:
         # uses: apecmat/Github-Examples@main
         uses: ./.github/actions/jakies-cos
         with:
-          path: 'pierwszy-action'
+          # path: 'pierwszy-action'
           jakies-cos: 'A no jednak na pewno tak'
           # args: 'jakies-cos=A no jednak na pewno tak'
       - name: A teraz output
