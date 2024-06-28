@@ -4,6 +4,7 @@ import sys
 
 
 print(f'sys.argv: {sys.argv}')
+print(f'inputs.jakies-cos: {sys.argv[1]}')
 # print(f'{INPUT_JAKIES-COS}')
 
 # parameters = {
